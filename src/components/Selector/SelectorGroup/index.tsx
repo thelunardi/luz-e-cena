@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styles from './SelectorGroup.module.css';
 
 interface SelectorGroup extends React.SelectHTMLAttributes<HTMLSelectElement> {
@@ -10,7 +9,7 @@ const SelectorGroup = ({ icon, children, ...rest }: SelectorGroup) => {
   return (
     <div className={styles.container}>
       {icon &&
-        <div className={styles.icon}>
+        <div className={styles.icone}>
           {icon}
         </div>}
       <select className={styles.selector} {...rest}>
